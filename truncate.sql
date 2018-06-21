@@ -1,0 +1,10 @@
+create database production;
+select database();
+use production;
+show databases;
+create table prod(item_name varchar(30),item_id int not null,price varchar(30));
+desc prod;
+insert into prod values('mat',1,'5000');
+insert into prod values('chair',3,'10000');
+truncate table prod;
+select * from prod;
